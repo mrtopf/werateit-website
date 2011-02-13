@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>We Rate It</title>
+  <meta name="description" content="Ein Experiment zur kollaborativen Altersbewertung von Web-Sites">
+  <meta name="author" content="Christian Scholz">
+
+  <!--  Mobile Viewport Fix
+        j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+  device-width : Occupy full width of the screen in its current orientation
+  initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+  maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+  -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+
+  <!-- CSS : implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=1">
+
+</head>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  <div id="container">
+    <header>
+        <div id="topheader">
+            <nav>
+                <ul id="navcontent">
+                    <li><a href="/">Startseite</a></li>
+                    <!--<li><a href="/mehr">Mehr erfahren</a></li>-->
+                    <li><a href="/impressum.html">Impressum</a></li>
+                    <li><a href="/datennutzung.html">Datennutzungserklärung</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="headercontent">
+            <h1><a href="/"><img src="/img/logo.png" /></a></h1>
+            <div id="subline">
+            Ein Experiment zur kollaborativen Altersbewertung von Web-Sites
+            </div>
+        </div>
+    </header>
+
+    {% block content %} 
+    <div class="widecontentbox">
+        <div class="widecontent">
+                <div class="scrollable">
+                    <div class="items">
+                        <div>
+                            <img src="/img/q.png" class="symbol" />
+                            <h2>Am Beginn: Viele Fragen</h2>
+                            <p>
+                            Ist es überhaupt möglich, Web-Seiten nach Altersstufen zu kategorisieren? Kann dies
+                            jedermann leisten? Wie breit wäre die Spannbreite, wenn Webseiten-Besucher oder -Betreiber
+                            diese Seiten gemeinsam bewerten?
+                            </p>
+                        </div>
+                        <div>
+                            <img src="/img/werateit-square.png" class="symbol" />
+                            <h2>Ein Experiment: We Rate It</h2>
+                            <p>
+                            We Rate It ist eine Erweiterung für den Browser Google Chrome, mit dem man einfach
+                            eine Altersbewertung für eine Website abgeben kann. Eine Datenbank sammelt diese Bewertungen,
+                            so dass die Fragen evtl. beantwortet werden können.
+                            </p>
+                            <p>
+                            Also macht mit!
+                            </p>
+                        </div>
+                        <div>
+                            <img src="/img/smiley.png" class="symbol" />
+                            <h2>Wie geht es weiter?</h2>
+                            <p>
+                            Die Ergebnisse dieses Experiments helfen hoffentlich, eine Antwort auf die Frage zu finden,
+                            ob Jugendschutz durch Alterskategorien überhaupt Sinn macht und wenn ja, wie dies am sinnvollsten
+                            umzusetzen ist.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- scrollable -->
+                <div class="navi"></div>
+
+        </div> <!-- content -->
+    </div><!-- widecontentbox -->
+    <div id="wideportletbox">
+        <div id="portlets">
+            <div class="portlet">
+                <h2>Installieren</h2>
+                <div class="content">
+                    <p>
+                        Ein Klick auf das entsprechende Browser-Icon installiert die Erweiterung.
+                    </p>
+                    <a href="/extensions/chrome/werateit.crx"><img src="/img/chrome-icon.png" /></a>
+                </div>
+            </div>
+            <div class="portlet">
+                <h2>Folge uns!</h2>
+                <div class="content">
+                    <div id="facebook-like">
+                        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FWe-Rate-It%2F181791111845100&amp;width=290&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=200" scrolling="no" frameborder="0" style="border:none; overflow:hidden; margin:0; padding: 0; width:290px; height:200px;" allowTransparency="true"></iframe>
+                    </div>
+                    <div id="twitter">
+                        <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="werateitde" data-related="comlounge:Die Betreiber von WeRateIt.de" data-lang="de">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet">
+                <h2>Mailing-Liste</h2>
+                <div class="content">
+                    <table border=0 cellspacing=0>
+                      <tr><td>
+                      <img src="http://groups.google.com/intl/de/images/logos/groups_logo_sm.gif"
+                             height=30 width=140 alt="Google Groups">
+                      </td></tr>
+                      <tr><td> <b>Bitte gib Deine E-Mail-Adresse ein, um der Mailingliste beizutreten.</b> </td></tr>
+                      <form action="http://groups.google.com/group/werateit/boxsubscribe">
+                      <tr><td> E-Mail: <input type=text name=email>
+                      <input type=submit name="sub" value="Abonnieren">
+                      </td></tr>
+                    </form>
+                    <tr><td><p><a href="http://groups.google.com/group/werateit">Diese Gruppe besuchen</a></p> </td></tr>
+                    </table>
+                </div>
+            </div>
+        </div><!-- portlets -->
+    </div>
+    {% endblock %} 
+    
+    <footer>
+        <div id="footercontent">
+        </div>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+  <script src="http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js"></script>
+  <script>
+    $(document).ready(function() {
+            $(".scrollable").scrollable({circular: true}).navigator().autoscroll({interval: 20000});
+    });
+  </script>
+  <!-- Piwik --> 
+  <script type="text/javascript">
+  var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.netzwende.de/" : "http://piwik.netzwende.de/");
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script><script type="text/javascript">
+  try {
+  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 10);
+  piwikTracker.trackPageView();
+  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script><noscript><p><img src="http://piwik.netzwende.de/piwik.php?idsite=10" style="border:0" alt="" /></p></noscript>
+  <!-- End Piwik Tracking Tag -->
+
+  
+</body>
+</html>

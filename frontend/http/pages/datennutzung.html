@@ -1,0 +1,25 @@
+{% extends "templates/master.html" %}
+{% block content %}
+    <div class="contentbox">
+        <div class="content">
+            <div class="bigcolumn" id="content">
+                <h3>Datennutzungs-Erklärung für die Erweiterung und das zugehörige Backend</h3>
+                <p>Die Anwendung WeRateIt speichert folgende Daten:</p>
+                <ul>
+                    <li>Die Extension erzeugt und speichert eine User-ID, die dann zum Backend übertragen wird. Pro Browser hat man also eine separate ID.</li>
+                    <li>Im Backend werden IP-Adressen als MD5-Hash zu Debugging-Zwecken gespeichert. Aus einem Hash kann die Original-IP allerdings nicht mehr zurückgerechnet werden.</li>
+                    <li>Beim Laden jeder Website fragt die Erweiterung, ob für diese eine Altersklassifizierung vorhanden ist. Dies bedeutet, dass die gehashte IP-Adresse und die Domain mitgeloggt werden (wieder zu Debugging-Zwecken).</li>
+                    <li>Pro Domain werden die Ratings und die zugehörigen User-IDs mit dem jeweiligen Rating gespeichert.</li>
+                    <li>Weitere Daten werden im Moment nicht gespeichert</li>
+                </ul>
+                Man demnach eine neue User-ID erzeugen, indem man die Anwendung deinstalliert und dann wieder installiert.
+
+                <h3>Datennutzungs-Erklärung für die Website</h3>
+                Wir nutzen die Analytics-Software piwik, um Statistiken zu den Besuchen der Website zu erhalten. Dies betrifft nur die 
+                öffentlichen Web-Seiten, nicht jedoch die Browser-Erweiterung.
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
